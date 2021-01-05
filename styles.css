@@ -57,3 +57,36 @@ body {
     background: #f4f4f4;
     color: #333333;
 }
+
+/* Page Animation */
+#page-1 h1 {
+    animation: heading var(--animate-speed) forwards ease-in;
+    transform: translateY(-1200px);
+}
+@keyframes heading {
+    25% {
+        color: coral;
+    }
+    75% {
+        color: darkblue;
+    }
+    100% {
+        transform: translateY(0);
+        color: white;
+    }
+}
+#page-1 p {
+    animation: text var(--animate-speed) forwards ease-in 1s;
+    transform: translateX(-1800px);
+}
+@keyframes text {
+    50% {
+        font-size: 1.1rem;
+    }
+    75% {
+        font-size: 1.2rem;
+    }
+    100%  {
+        transform: translateX(0);
+    }
+}
